@@ -22,4 +22,8 @@ class Scoreboard(Turtle):
         self.left_score += 1
         self.update_scoreboard()
         
+    def right_point(self):
+        self.right_score += 1
+        self.update_scoreboard()
+        
     
