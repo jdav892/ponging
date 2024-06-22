@@ -33,7 +33,7 @@ while game_is_on:
         ball.bounce_y()
     
     #Paddle collision
-    if ball.distance(right_paddle) < 50 and ball.xcor() > 340 or ball.distance(left_paddle) < 50 and ball.xcor() < -340:
+    if ball.distance(right_paddle) < 50 and ball.xcor() > 320 or ball.distance(left_paddle) < 50 and ball.xcor() < -320:
         ball.bounce_x()
 
 screen.exitonclick()
