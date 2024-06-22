@@ -39,9 +39,11 @@ while game_is_on:
         ball.bounce_x()
     #detect missing
     if ball.xcor() >= 390:
-        ball.reset()
+        ball.reset_position()
+        scoreboard.left_point()
     
     if ball.xcor() <= -390:
-        ball.reset()
+        ball.reset_position()
+        scoreboard.right_point()
 
 screen.exitonclick()
