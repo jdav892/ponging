@@ -1,5 +1,7 @@
 from turtle import Screen
 from paddle import Paddle
+from ball import Ball
+
 
 screen = Screen()
 screen.bgcolor('black')
@@ -11,7 +13,7 @@ screen.tracer(0)
 right_paddle = Paddle((350, 0))
 left_paddle = Paddle((-350, 0))
 
-
+ball = Ball((0,0))
 
 screen.listen()
 screen.onkey(right_paddle.go_up, "Up")
